@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- SETTINGS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- FAVICON -->
+   <link rel="shortcut icon" href="src/img/favicon-vaduz.png" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/main.css">
+  
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,300;1,400&display=swap"
+  rel="stylesheet">
+  
+  
+  <title>Piano Simulator - Leonardo Braga</title>
+</head>
+
+<body>
+
+  <!-- <h1>Piano Simulator - Leonardo Braga</h1> -->
+  <div class="container">
+    <header>
+      <h3>Virtual Piano - Leonardo Braga</h2>
+      <div class="column volume-slider">
+        <span>Volume</span> <input type="range" min="0" max="1" value="0.5" step="any">
+      </div>
+      <div class="column keys-check">
+        <span>Teclas</span> <input type="checkbox" checked>
+      </div>
+    </header>
+    <ul class="piano-keys">
+      <li class="key white" data-key="a"><span></span></li>
+      <li class="key black" data-key="w"><span></span></li>
+      <li class="key white" data-key="s"><span></span></li>
+      <li class="key black" data-key="e"><span></span></li>
+      <li class="key white" data-key="d"><span></span></li>
+      <li class="key black" data-key="f"><span></span></li>
+      <li class="key white" data-key="t"><span></span></li>
+      <li class="key black" data-key="g"><span></span></li>
+      <li class="key white" data-key="y"><span></span></li>
+      <li class="key black" data-key="h"><span></span></li>
+      <li class="key white" data-key="u"><span></span></li>
+      <li class="key black" data-key="j"><span></span></li>
+      <li class="key white" data-key="k"><span></span></li>
+      <li class="key black" data-key="o"><span></span></li>
+      <li class="key white" data-key="l"><span></span></li>
+      <li class="key black" data-key="p"><span></span></li>
+      <li class="key white" data-key=";"><span></span></li>
+    </ul>
+  </div>
+
+  <script defer src="./src/scripts/engine.js"></script>
+</body>
+
+</html>
